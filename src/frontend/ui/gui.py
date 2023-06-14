@@ -26,10 +26,10 @@ class Window(QWidget):
         self.setWindowIcon(QIcon("/home/redmi/Code/db_qt/src/resource/images/icon/icon.png"))
         self.resize(700, 500)
 
-        v_layout2 = QVBoxLayout()
-        v_layout2.setAlignment(Qt.AlignCenter)
-        self.setLayout(v_layout2)
-        v_layout2.addWidget(FlowLayout())
+        # v_layout2 = QVBoxLayout()
+        # v_layout2.setAlignment(Qt.AlignCenter)
+        # self.setLayout(v_layout2)
+        # v_layout2.addWidget(FlowLayout())
 
 
     def on_button_clicked(self):
