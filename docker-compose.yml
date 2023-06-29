@@ -14,8 +14,8 @@ services:
     volumes:
       - ./postgres/migration:/docker-entrypoint-initdb.d
       - ./postgres/data:/var/lib/postgresql/data:z
-    healthcheck:
-      test: config.env
-      interval: 10s
-      timeout: 3s
-      retries: 3
+#    healthcheck:
+#      test: config.env
+#      interval: 10s
+#      timeout: 3s
+#      retries: 3
