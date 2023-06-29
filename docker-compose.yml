@@ -1,0 +1,17 @@
+version: '3.9'
+networks:
+  db_app: 
+    driver: bridge
+services:
+  postgres:
+    container_name: db_pg_container
+    image: postgres:latest
+    ports:
+      - "5432:5432"
+    env_file:
+      - config.env
+    networks:
+      - db_app
+    volumes:
+      - ./postgres/migration:/docker-entrypoint-initdb.d
+      - ./postgres/data:/var/lib/postgresql/data:Z
